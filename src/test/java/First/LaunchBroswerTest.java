@@ -9,5 +9,6 @@ public class LaunchBroswerTest {
 	@Test
 	public void launch() {
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 }
