@@ -10,5 +10,6 @@ public class LaunchBroswerTest {
 	public void launch() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts.implicitlyWait(Duration.OfSeconds(5));
 	}
 }
